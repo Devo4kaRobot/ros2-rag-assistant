@@ -1,0 +1,6 @@
+name: 09_bgem3_recursive
+chunking: recursive
+retriever:
+  type: dense
+  model: BAAI/bge-m3
+  batch_size: 8

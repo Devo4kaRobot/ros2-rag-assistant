@@ -1,0 +1,25 @@
+# окружение и секреты
+.venv/
+.env
+certs/
+scripts/local.bat
+# большие и воспроизводимые данные
+data/raw/
+data/processed/
+data/index/
+qdrant_storage/
+models/
+# служебные результаты (воспроизводятся скриптами)
+results/logs/
+results/runs/bm25_ru_*
+results/feedback.jsonl
+results/generation/manual_*.csv
+results/generation/*.grading.md
+results/generation/grading_*part*.md
+results/generation/grades_*part*.jsonl
+results/generation/grades_test_v*.jsonl
+# мусор
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/

@@ -1,0 +1,242 @@
+{
+"A01": {
+"id": "A01",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Команды верные, но пропущено подключение репозитория ROS 2 (ros2-apt-source), без которого apt install ros-lyrical-desktop не найдёт пакет."
+},
+"A02": {
+"id": "A02",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Суть верна, но имя ~/.bashrc и команда source ~/.bashrc в фрагментах не упоминаются (там лишь «shell startup script»)."
+},
+"A03": {
+"id": "A03",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Назван ROS_DOMAIN_ID, но нет команды export, допустимого диапазона значений и альтернативы ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST, хотя она была во фрагменте [8]."
+},
+"A04": {
+"id": "A04",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Выбор через RMW_IMPLEMENTATION верен, но не сказано, что нужно поставить ros-lyrical-rmw-cyclonedds-cpp (он есть во фрагменте [4]); без пакета talker на Cyclone не запустится."
+},
+"A05": {
+"id": "A05",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A06": {
+"id": "A06",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Совет «если флага MULTICAST нет, включите его вручную» — добавлен от себя, в фрагменте этого нет."
+},
+"A07": {
+"id": "A07",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A08": {
+"id": "A08",
+"correctness": 0,
+"groundedness": 0,
+"comment": "Бот ошибочно отказался: во фрагменте [2] прямо описаны ros-lyrical-desktop (ros_base + визуализация и демо) и ros-lyrical-ros-base (ros_core + tf2, urdf)."
+},
+"A09": {
+"id": "A09",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A10": {
+"id": "A10",
+"correctness": 1,
+"groundedness": 1,
+"comment": "Суть (фиксированный набор версий) передана, но не сказано, что снапшоты не получают багфиксов и обновлений безопасности; «откат перед выпуском продукта» додуман от себя."
+},
+"A11": {
+"id": "A11",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A12": {
+"id": "A12",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A13": {
+"id": "A13",
+"correctness": 0,
+"groundedness": 0,
+"comment": "Бот утверждает, что для Noble 24.04 «доступны пакеты Tier 3», хотя фрагмент [2] говорит обратное: на Tier 3 Lyrical нужно собирать из исходников, deb-пакетов нет."
+},
+"A15": {
+"id": "A15",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Пакет и роутер rmw_zenohd указаны верно, но не сказано про выбор rmw через export RMW_IMPLEMENTATION=rmw_zenoh_cpp (есть во фрагменте [2])."
+},
+"A16": {
+"id": "A16",
+"correctness": 1,
+"groundedness": 0,
+"comment": "Правка ubuntu.sources упомянута (без строки Suites), но пакет ros-lyrical-ros-base не назван; ссылки [1] и [4] (список платформ и tar-архив Rolling) не подтверждают выбор пакета."
+},
+"B01": {
+"id": "B01",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B03": {
+"id": "B03",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B06": {
+"id": "B06",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B07": {
+"id": "B07",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B08": {
+"id": "B08",
+"correctness": 0,
+"groundedness": 0,
+"comment": "Durability неверно описана как устойчивость к сбоям («volatile — сообщения теряются при сбое»); на деле это хранение сэмплов для поздно подключившихся подписчиков, и фрагменты [2][3] такого не говорят."
+},
+"B12": {
+"id": "B12",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Суть верна (выбор раскладки процессов при развёртывании), но фразы про упрощение разработки и модульность добавлены от себя."
+},
+"B13": {
+"id": "B13",
+"correctness": 2,
+"groundedness": 0,
+"comment": "Ответ верный, но таблица совместимости находится во фрагменте [5], а бот ссылается на [6], где её нет."
+},
+"B14": {
+"id": "B14",
+"correctness": 1,
+"groundedness": 1,
+"comment": "Диапазоны 0–101 и 215–232 верны, но вывод «для macOS/Windows рекомендуется ID 166» — искажение фрагмента (166 — верхняя граница, а не рекомендация)."
+},
+"B18": {
+"id": "B18",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Шаблон constanttype CONSTANTNAME=constantvalue назван «ключевым словом», нет примера вида int32 X=123 — может запутать."
+},
+"B19": {
+"id": "B19",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Команда верна, но --params-file взят из фрагмента [4], а ссылка дана только на [2]; объединённая команда составлена ботом."
+},
+"B20": {
+"id": "B20",
+"correctness": 1,
+"groundedness": 0,
+"comment": "--packages-select верно, но вместо --symlink-install дан выдуманный совет про настройки редактора/IDE со ссылкой на [2]."
+},
+"C03": {
+"id": "C03",
+"correctness": 0,
+"groundedness": 0,
+"comment": "--prefix поставлен после --ros-args (будет передан ноде), а в документации: ros2 run --prefix 'gdb -ex run --args' <pkg> <node>."
+},
+"C04": {
+"id": "C04",
+"correctness": 1,
+"groundedness": 0,
+"comment": "Шаги с 30-custom.list и custom_rules.yaml верны, но команда rosdep install <ключ> неверна, пропущено добавление <depend> в package.xml, а цитаты [2][4] не содержат описанной процедуры (она в [8])."
+},
+"C06": {
+"id": "C06",
+"correctness": 1,
+"groundedness": 0,
+"comment": "Нет различия build tool / meta-build tool, colcon ошибочно назван «построенным поверх CMake»; параллельная сборка и прочее приписаны фрагменту [2], где этого нет."
+},
+"C07": {
+"id": "C07",
+"correctness": 1,
+"groundedness": 0,
+"comment": "Про Rolling верно, но совет «Humble или Focal» выдуман (Focal — версия Ubuntu, а не дистрибутив ROS 2) и отсутствует в контексте."
+},
+"C11": {
+"id": "C11",
+"correctness": 1,
+"groundedness": 1,
+"comment": "C++20 верно, но пропущен C17, а «минимальный Python 3.12.3» взят из таблицы версий для платформ вместо требования Python 3.12–3.14."
+},
+"C12": {
+"id": "C12",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Верно: 1,5 года, подтверждено фрагментом [1]."
+},
+"C13": {
+"id": "C13",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Верно: ros2 topic bw с несколькими топиками и --all, подтверждено фрагментом [1]."
+},
+"C15": {
+"id": "C15",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Корректный отказ."
+},
+"C16": {
+"id": "C16",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Корректный отказ (флаг отказа не выставлен, но по тексту бот явно отказывается)."
+},
+"C17": {
+"id": "C17",
+"correctness": 1,
+"groundedness": 0,
+"comment": "«Нет» верно, но рекомендации про несуществующую переменную ROS_DISCOVERY_URI и файлы configuration.yaml/parameter_server.yaml выдуманы и приписаны [5]."
+},
+"C18": {
+"id": "C18",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Корректный отказ."
+},
+"C19": {
+"id": "C19",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Корректный отказ."
+},
+"C20": {
+"id": "C20",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Корректный отказ."
+},
+"C24": {
+"id": "C24",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Корректный отказ."
+}
+}

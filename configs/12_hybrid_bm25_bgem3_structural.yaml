@@ -1,0 +1,9 @@
+name: 12_hybrid_bm25_bgem3_structural
+chunking: structural
+retriever:
+  type: hybrid
+  rrf_k: 60
+  candidates: 50
+  components:
+    - {type: bm25}
+    - {type: dense, model: BAAI/bge-m3, batch_size: 8}

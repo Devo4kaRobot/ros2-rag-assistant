@@ -1,0 +1,8 @@
+name: 16_rerank_e5base_recursive_bge
+chunking: recursive
+# потолок качества: лучший dense + тяжёлый реранкер (медленно на GTX 1650)
+retriever:
+  type: rerank
+  model: BAAI/bge-reranker-v2-m3
+  top_n: 20
+  base: {type: dense, model: intfloat/multilingual-e5-base}

@@ -1,0 +1,8 @@
+name: 17_rerank_e5base_recursive_minilm
+chunking: recursive
+# лёгкий многоязычный реранкер (~118M параметров вместо 568M) — кандидат для бота
+retriever:
+  type: rerank
+  model: cross-encoder/mmarco-mMiniLMv2-L12-H384-v1
+  top_n: 20
+  base: {type: dense, model: intfloat/multilingual-e5-base}

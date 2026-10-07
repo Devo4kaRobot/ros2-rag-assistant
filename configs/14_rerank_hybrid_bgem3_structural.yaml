@@ -1,0 +1,11 @@
+name: 14_rerank_hybrid_bgem3_structural
+chunking: structural
+retriever:
+  type: rerank
+  model: BAAI/bge-reranker-v2-m3
+  top_n: 20
+  base:
+    type: hybrid
+    components:
+      - {type: bm25}
+      - {type: dense, model: BAAI/bge-m3, batch_size: 8}

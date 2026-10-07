@@ -1,0 +1,5 @@
+name: 05_e5base_recursive
+chunking: recursive
+retriever:
+  type: dense
+  model: intfloat/multilingual-e5-base

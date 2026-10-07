@@ -1,0 +1,4 @@
+name: 03_bm25_structural
+chunking: structural
+retriever:
+  type: bm25

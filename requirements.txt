@@ -1,0 +1,14 @@
+# Шаг 1: корпус, нарезка, BM25, метрики
+numpy>=1.26
+pyyaml>=6.0
+pytest>=8.0
+# Шаг 2: поиск по эмбеддингам и реранкер.
+# torch ставится ОТДЕЛЬНО под свою видеокарту (см. README), иначе pip поставит CPU-версию.
+sentence-transformers>=3.0
+# Шаг 3: генерация, API, бот
+gigachat>=0.2.3
+python-dotenv>=1.0
+certifi
+fastapi>=0.110
+uvicorn>=0.29
+aiogram>=3.13

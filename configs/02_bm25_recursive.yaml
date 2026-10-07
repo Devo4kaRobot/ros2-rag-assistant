@@ -1,0 +1,4 @@
+name: 02_bm25_recursive
+chunking: recursive
+retriever:
+  type: bm25

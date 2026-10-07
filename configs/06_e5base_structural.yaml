@@ -1,0 +1,5 @@
+name: 06_e5base_structural
+chunking: structural
+retriever:
+  type: dense
+  model: intfloat/multilingual-e5-base

@@ -1,0 +1,11 @@
+.venv/
+.git/
+.env
+data/raw/
+data/index/
+data/processed/
+results/
+certs/
+models/
+**/__pycache__/
+*.pyc

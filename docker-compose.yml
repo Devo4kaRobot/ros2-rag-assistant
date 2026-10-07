@@ -1,0 +1,34 @@
+# docker compose up --build
+# Первый запуск: скачивается bge-m3 (~2.2 ГБ) и, если нет готового data/index, считаются эмбеддинги
+# корпуса на CPU (~10–20 мин). Дальше старт занимает меньше минуты.
+services:
+  api:
+    build: .
+    env_file: .env
+    environment:
+      HF_HUB_OFFLINE: "0"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/index:/app/data/index   # эмбеддинги корпуса (можно переиспользовать посчитанные локально)
+      - ./certs:/app/certs             # сертификат НУЦ Минцифры (скачается сам, если нет)
+      - hf_cache:/models               # кэш моделей HuggingFace
+    restart: unless-stopped
+
+  bot:
+    build: .
+    command: ["python", "src/bot/main.py"]
+    env_file: .env
+    environment:
+      API_URL: http://api:8000
+      # если Telegram доступен только через VPN-прокси на хосте (клиент должен разрешать подключения из LAN):
+      # TELEGRAM_PROXY: http://host.docker.internal:10801
+    volumes:
+      - ./results:/app/results         # логи вопросов и оценок 👍/👎
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  hf_cache:

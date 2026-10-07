@@ -1,0 +1,9 @@
+name: 11_hybrid_bm25_e5base_structural
+chunking: structural
+retriever:
+  type: hybrid
+  rrf_k: 60
+  candidates: 50
+  components:
+    - {type: bm25}
+    - {type: dense, model: intfloat/multilingual-e5-base}

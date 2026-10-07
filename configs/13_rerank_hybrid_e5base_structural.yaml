@@ -1,0 +1,11 @@
+name: 13_rerank_hybrid_e5base_structural
+chunking: structural
+retriever:
+  type: rerank
+  model: BAAI/bge-reranker-v2-m3
+  top_n: 20
+  base:
+    type: hybrid
+    components:
+      - {type: bm25}
+      - {type: dense, model: intfloat/multilingual-e5-base}

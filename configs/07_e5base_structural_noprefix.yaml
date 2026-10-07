@@ -1,0 +1,7 @@
+name: 07_e5base_structural_noprefix
+chunking: structural
+# абляция: что будет, если забыть префиксы query:/passage: у e5
+retriever:
+  type: dense
+  model: intfloat/multilingual-e5-base
+  use_prefix: false

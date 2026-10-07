@@ -1,0 +1,5 @@
+name: 04_e5base_fixed
+chunking: fixed
+retriever:
+  type: dense
+  model: intfloat/multilingual-e5-base

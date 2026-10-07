@@ -1,0 +1,9 @@
+name: 18_rerank_e5base_recursive_bge_top10
+chunking: recursive
+# компромисс: тяжёлый реранкер, но вдвое меньше кандидатов и короче вход
+retriever:
+  type: rerank
+  model: BAAI/bge-reranker-v2-m3
+  top_n: 10
+  max_length: 384
+  base: {type: dense, model: intfloat/multilingual-e5-base}

@@ -1,0 +1,6 @@
+name: 10_bgem3_structural
+chunking: structural
+retriever:
+  type: dense
+  model: BAAI/bge-m3
+  batch_size: 8

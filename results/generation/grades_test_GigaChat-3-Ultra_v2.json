@@ -1,0 +1,122 @@
+{
+"A14": {
+"id": "A14",
+"correctness": 0,
+"groundedness": 2,
+"comment": "Отказ на отвечаемый вопрос: в документации (ROS 2 on Raspberry Pi) сказано, что arm32 — Tier 3 и нужна сборка из исходников, но в контекст это не попало."
+},
+"B02": {
+"id": "B02",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Верная команда с YAML-аргументами; имя 'turtle2' вместо '' не противоречит документации."
+},
+"B04": {
+"id": "B04",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Суть верна, но ссылка [5] (вывод event callback) не подтверждает утверждения; node API add_post_set_parameters_callback не упомянут."
+},
+"B05": {
+"id": "B05",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Назван static_transform_publisher, но не дана сама команда с флагами --z 1 --frame-id/--child-frame-id, хотя она была во фрагменте [1]."
+},
+"B09": {
+"id": "B09",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Верно: поворот — action, сервисы для быстрых вызовов, action с обратной связью и прерыванием."
+},
+"B10": {
+"id": "B10",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Deadlock и call_async объяснены верно; не упомянут вариант с отдельной callback group и MultiThreadedExecutor."
+},
+"B11": {
+"id": "B11",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Полностью совпадает с эталоном и фрагментом [1]."
+},
+"B15": {
+"id": "B15",
+"correctness": 2,
+"groundedness": 2,
+"comment": "COLCON_IGNORE — верно и подтверждено [5]."
+},
+"B16": {
+"id": "B16",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Переменная названа верно, но не сказано, что её нужно выставить в 1 (export RCUTILS_LOGGING_USE_STDOUT=1)."
+},
+"B17": {
+"id": "B17",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Флаги -d и -b описаны верно по [1]; пример команды и --max-bag-duration не приведены."
+},
+"C01": {
+"id": "C01",
+"correctness": 2,
+"groundedness": 2,
+"comment": "colcon test и colcon test-result --all --verbose — верно и подтверждено [5] и [4]."
+},
+"C02": {
+"id": "C02",
+"correctness": 2,
+"groundedness": 2,
+"comment": "YAML-переопределение и --qos-profile-overrides-path точно по [1]."
+},
+"C05": {
+"id": "C05",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Все шаги (virtualenv, COLCON_IGNORE в venv, pip, source, colcon build) совпадают с [1]."
+},
+"C08": {
+"id": "C08",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Описан только Tier 2, нет сравнения с Tier 1 (частое тестирование, приоритет багов, влияние на даты релиза), о котором спрашивали."
+},
+"C09": {
+"id": "C09",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Роли описаны верно, но путь в мейнтейнеры дан по устаревшему разделу [5] без ключевого механизма менторства PMC Member из [1]."
+},
+"C10": {
+"id": "C10",
+"correctness": 0,
+"groundedness": 2,
+"comment": "Отказ на отвечаемый вопрос: в Code style указан лимит 100 символов, но в контекст он не попал."
+},
+"C14": {
+"id": "C14",
+"correctness": 2,
+"groundedness": 2,
+"comment": "LTS, 5 лет до мая 2031, Tier 1 — Ubuntu 26.04 amd64/arm64 — верно и подтверждено [1][2][3]."
+},
+"C21": {
+"id": "C21",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Корректный отказ без советов от себя."
+},
+"C22": {
+"id": "C22",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Корректный отказ без советов от себя."
+},
+"C23": {
+"id": "C23",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Корректный отказ без советов от себя."
+}
+}

@@ -1,0 +1,242 @@
+{
+"A01": {
+"id": "A01",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Порядок шагов нарушен: apt update/upgrade идут до подключения репозитория, а после dpkg -i нет apt update, поэтому установка ros-lyrical-desktop по инструкции упадёт с ошибкой «пакет не найден»."
+},
+"A02": {
+"id": "A02",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A03": {
+"id": "A03",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A04": {
+"id": "A04",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Не сказано, что сначала нужно поставить ros-lyrical-rmw-cyclonedds-cpp (Cyclone не входит в стандартную установку), хотя эта команда есть во фрагменте [4]."
+},
+"A05": {
+"id": "A05",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A06": {
+"id": "A06",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A07": {
+"id": "A07",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A08": {
+"id": "A08",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A09": {
+"id": "A09",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A10": {
+"id": "A10",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A11": {
+"id": "A11",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A12": {
+"id": "A12",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A13": {
+"id": "A13",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A15": {
+"id": "A15",
+"correctness": 1,
+"groundedness": 1,
+"comment": "ZENOH_ROUTER_CONFIG_URI из туториала по безопасности ([3]) подан как общая альтернатива и приписан к [1][2]; не упомянут export RMW_IMPLEMENTATION=rmw_zenoh_cpp."
+},
+"A16": {
+"id": "A16",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Правка Suites дана верно, но на прямой вопрос «какой пакет ставить» нет ответа: ros-lyrical-ros-base не назван."
+},
+"B01": {
+"id": "B01",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B03": {
+"id": "B03",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B06": {
+"id": "B06",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B07": {
+"id": "B07",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B08": {
+"id": "B08",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Определения политик (volatile только новые сообщения, best effort ради своевременности) взяты из [5]/[6] или додуманы, а цитируется только [1], где есть лишь аналогии с ROS 1."
+},
+"B12": {
+"id": "B12",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Упор только на запуск в одном процессе; упущена суть — выбор раскладки процессов при развёртывании (отдельные процессы для изоляции сбоев и отладки) с одним API."
+},
+"B13": {
+"id": "B13",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B14": {
+"id": "B14",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B18": {
+"id": "B18",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B19": {
+"id": "B19",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B20": {
+"id": "B20",
+"correctness": 0,
+"groundedness": 0,
+"comment": "Не назван --symlink-install, а утверждение, что правки .py подхватываются сразу благодаря копированию файлов setuptools, неверно и не подтверждается фрагментом [4]."
+},
+"C03": {
+"id": "C03",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C04": {
+"id": "C04",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C06": {
+"id": "C06",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Суть верна, но упорядочивание по зависимостям и вызов CMake/setup.py для каждого пакета во фрагментах не описаны, а ссылка [2] этого не подтверждает."
+},
+"C07": {
+"id": "C07",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C11": {
+"id": "C11",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C12": {
+"id": "C12",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C13": {
+"id": "C13",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C15": {
+"id": "C15",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C16": {
+"id": "C16",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C17": {
+"id": "C17",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Сказано лишь, что недоступен атрибут machine, но нет прямого «нет», и не сказано, что сам тег machine пока не поддерживается."
+},
+"C18": {
+"id": "C18",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C19": {
+"id": "C19",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C20": {
+"id": "C20",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C24": {
+"id": "C24",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+}
+}

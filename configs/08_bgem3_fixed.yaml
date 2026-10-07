@@ -1,0 +1,6 @@
+name: 08_bgem3_fixed
+chunking: fixed
+retriever:
+  type: dense
+  model: BAAI/bge-m3
+  batch_size: 8

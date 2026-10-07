@@ -1,0 +1,122 @@
+{
+"A14": {
+"id": "A14",
+"correctness": 0,
+"groundedness": 2,
+"comment": "Отказ на отвечаемый вопрос: в документации есть, что arm32 — Tier 3 (только сборка из исходников), но в контексте этого не было."
+},
+"B02": {
+"id": "B02",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B04": {
+"id": "B04",
+"correctness": 2,
+"groundedness": 0,
+"comment": "Суть верна, но ссылка [5] на создание ParameterEventHandler указывает на фрагмент про set_parameters_atomically, а не на нужный код."
+},
+"B05": {
+"id": "B05",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B09": {
+"id": "B09",
+"correctness": 1,
+"groundedness": 1,
+"comment": "Для поворота на заданный угол предлагает сервис, хотя документация ([4]) рекомендует action для любого дискретного поведения, двигающего робота."
+},
+"B10": {
+"id": "B10",
+"correctness": 1,
+"groundedness": 1,
+"comment": "Совет запускать spin в отдельном потоке не решает deadlock при синхронном вызове внутри колбэка (фрагмент [2] про вызов из main), а вариант с разными callback group / MultiThreadedExecutor не упомянут."
+},
+"B11": {
+"id": "B11",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B15": {
+"id": "B15",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B16": {
+"id": "B16",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Переменная названа верно, но не сказано, что её нужно установить в 1 (RCUTILS_LOGGING_USE_STDOUT=1)."
+},
+"B17": {
+"id": "B17",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C01": {
+"id": "C01",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C02": {
+"id": "C02",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C05": {
+"id": "C05",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Флаг --symlink-install в colcon build добавлен от себя, во фрагменте [1] просто colcon build."
+},
+"C08": {
+"id": "C08",
+"correctness": 1,
+"groundedness": 1,
+"comment": "Не упомянуто, что для Tier 2 бинарные пакеты могут не предоставляться; «CI не реже раза в неделю» и «не будут устранены вообще» неточно передают текст фрагмента [3]."
+},
+"C09": {
+"id": "C09",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Упущен основной путь в Committer через менторство PMC Member (есть во фрагменте [1]); описан только старый процесс по вкладу за год."
+},
+"C10": {
+"id": "C10",
+"correctness": 0,
+"groundedness": 2,
+"comment": "Отказ на отвечаемый вопрос: в документации максимальная длина строки 100 символов, но в контексте этого не было."
+},
+"C14": {
+"id": "C14",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C21": {
+"id": "C21",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C22": {
+"id": "C22",
+"correctness": 0,
+"groundedness": 1,
+"comment": "После отказа даёт советы от себя (обновлять через sudo apt upgrade, vcs custom), хотя должен был просто сказать, что в документации этого нет."
+},
+"C23": {
+"id": "C23",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+}
+}

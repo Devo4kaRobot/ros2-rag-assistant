@@ -1,0 +1,11 @@
+name: 15_hybrid_w_bm25_e5base_recursive
+chunking: recursive
+# гибрид с весами: BM25 получает половину голоса (в 11 при равных весах он тянул вниз)
+retriever:
+  type: hybrid
+  rrf_k: 60
+  candidates: 50
+  weights: [0.5, 1.0]
+  components:
+    - {type: bm25}
+    - {type: dense, model: intfloat/multilingual-e5-base}

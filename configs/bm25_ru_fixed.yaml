@@ -1,0 +1,4 @@
+name: bm25_ru_fixed
+chunking: fixed
+retriever:
+  type: bm25

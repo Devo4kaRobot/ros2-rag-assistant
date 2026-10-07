@@ -1,0 +1,242 @@
+{
+"A01": {
+"id": "A01",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Порядок шагов искажён: «обновите систему» поставлено до подключения репозитория, а обязательный sudo apt update после добавления ros2-apt-source пропущен."
+},
+"A02": {
+"id": "A02",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Файл .bashrc в фрагменте [1] не назван (там только «shell startup script»), это мелкое добавление от себя."
+},
+"A03": {
+"id": "A03",
+"correctness": 1,
+"groundedness": 0,
+"comment": "Диапазон ROS_DOMAIN_ID «от 0 до 232» выдуман (в контексте его нет), а документация рекомендует 0–101 как безопасный."
+},
+"A04": {
+"id": "A04",
+"correctness": 1,
+"groundedness": 2,
+"comment": "Не сказано, что нужно установить ros-lyrical-rmw-cyclonedds-cpp, хотя это есть во фрагменте [4]; без пакета переключение не сработает."
+},
+"A05": {
+"id": "A05",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A06": {
+"id": "A06",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A07": {
+"id": "A07",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Про «водопровод» сослался на [1][4], хотя это есть только в [2]/[8]."
+},
+"A08": {
+"id": "A08",
+"correctness": 2,
+"groundedness": 1,
+"comment": "RViz и то, что GUI нужен дисплей, в контексте не упоминаются; это мелкое добавление."
+},
+"A09": {
+"id": "A09",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A10": {
+"id": "A10",
+"correctness": 2,
+"groundedness": 2,
+"comment": "Не упомянуто, что снапшоты не получают исправлений безопасности (мелкое упущение)."
+},
+"A11": {
+"id": "A11",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A12": {
+"id": "A12",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A13": {
+"id": "A13",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A15": {
+"id": "A15",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"A16": {
+"id": "A16",
+"correctness": 1,
+"groundedness": 1,
+"comment": "Бот буквально скопировал noble-updates noble-backports из примера, хотя для Lyrical нужна Ubuntu 26.04 (resolute), а на Noble бинарников нет; ros-lyrical-ros-base в [1][2] не упоминается."
+},
+"B01": {
+"id": "B01",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B03": {
+"id": "B03",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B06": {
+"id": "B06",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B07": {
+"id": "B07",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B08": {
+"id": "B08",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Определения reliability (гарантия доставки, потери ради меньшей задержки) в фрагментах прямо не даны; это добавлено от себя."
+},
+"B12": {
+"id": "B12",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B13": {
+"id": "B13",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B14": {
+"id": "B14",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B18": {
+"id": "B18",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B19": {
+"id": "B19",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"B20": {
+"id": "B20",
+"correctness": 0,
+"groundedness": 0,
+"comment": "Вместо --symlink-install предложен флаг --allow-overriding (он для переопределения пакетов underlay) и запуск через IDE/PYTHONPATH — ни того, ни другого нет во фрагментах, ссылки [4][6] это не подтверждают."
+},
+"C03": {
+"id": "C03",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C04": {
+"id": "C04",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C06": {
+"id": "C06",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Ключевое утверждение про упорядочивание пакетов по зависимостям верно по документации, но во фрагментах [2][3] его нет — добавлено от себя."
+},
+"C07": {
+"id": "C07",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C11": {
+"id": "C11",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C12": {
+"id": "C12",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C13": {
+"id": "C13",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C15": {
+"id": "C15",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Отказ корректный, но фраза про colcon build с указанием пакета приписана фрагменту [7], где этого нет."
+},
+"C16": {
+"id": "C16",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C17": {
+"id": "C17",
+"correctness": 2,
+"groundedness": 1,
+"comment": "Вывод верный по [5], но совет использовать «другие механизмы», якобы описанные в документации Launch, не подтверждается фрагментами (в доке сказано лишь, что machine пока не поддерживается)."
+},
+"C18": {
+"id": "C18",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C19": {
+"id": "C19",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C20": {
+"id": "C20",
+"correctness": 2,
+"groundedness": 2,
+"comment": ""
+},
+"C24": {
+"id": "C24",
+"correctness": 0,
+"groundedness": 0,
+"comment": "Вместо отказа даёт советы из общих знаний (runfile, graphics-drivers, nvidia-driver-535), которых нет в документации и фрагментах."
+}
+}
